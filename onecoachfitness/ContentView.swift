@@ -2,8 +2,7 @@
 //  ContentView.swift
 //  onecoachfitness
 //
-//  Created by Saffan Ahmed on 20/01/2021.
-//
+//  Copyrights © 2021 - Saffan Ahmed. All rights reserved.
 
 import SwiftUI
 
