@@ -23,13 +23,14 @@ struct ContentView: View {
                         .tag(0)
                     Text("Gym Search")
                         VStack {
+                            Text("Hello")
                             MapView()
-                                .scaledToFit()
+                                //.scaledToFit()
                             List(gymLocationManager.gymLocations) { location in
                                 VStack {
                                     Text(String(location.name!))
                                     Spacer()
-                                    Text(location.vicinity!)
+                                    //Text(location.vicinity!)
                                 }
                             }
                         }
