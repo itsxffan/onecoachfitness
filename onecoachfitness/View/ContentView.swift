@@ -10,9 +10,11 @@ import UIKit
 
 struct ContentView: View {
     
+    @ObservedObject var gymLocationManager = GymLocationManager()
     @State var selectedIndex = 0
 //    let tabBarImageNames = ["map", "bolt.heart", "person", "gear"]
 //    let tabBarTitleNames = ["Gym", "Exercise", "Profile", "Settings"]
+    
     
     var body: some View {
         VStack {
@@ -20,7 +22,13 @@ struct ContentView: View {
                     Text("Home")
                         .tag(0)
                     Text("Gym Search")
-                        MapView()
+                        VStack {
+                            MapView()
+                                .scaledToFit()
+                            List(gymLocationManager.gymLocations) { location in
+                                Text(location.vicinity)
+                            }
+                        }
                         .tag(1)
                     Text("Workout")
                         .tag(2)
@@ -35,6 +43,9 @@ struct ContentView: View {
             Divider()
             
             TabBarView(selectedIndex: $selectedIndex)
+        }
+        .onAppear {
+            self.gymLocationManager.fetchData()
         }
     }
 }

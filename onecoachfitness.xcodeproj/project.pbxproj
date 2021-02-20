@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		2657FAFB25E081D900637737 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFA25E081D900637737 /* ProfileView.swift */; };
 		2657FAFE25E0827200637737 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFD25E0827200637737 /* SettingsView.swift */; };
 		2657FB0125E09CAC00637737 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FB0025E09CAC00637737 /* TabBarView.swift */; };
+		2692598025E0BE21009E553E /* apikey.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2692597F25E0BE21009E553E /* apikey.rtf */; };
+		2692598B25E12E11009E553E /* GymLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692598A25E12E11009E553E /* GymLocationManager.swift */; };
+		2692598E25E12F89009E553E /* GymLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692598D25E12F89009E553E /* GymLocationData.swift */; };
 		402F0D0EDAD5126B597BF782 /* Pods_onecoachfitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C94AF65F6E099F55CC204 /* Pods_onecoachfitness.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		2657FAFA25E081D900637737 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2657FAFD25E0827200637737 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2657FB0025E09CAC00637737 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		2692597F25E0BE21009E553E /* apikey.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = apikey.rtf; sourceTree = "<group>"; };
+		2692598A25E12E11009E553E /* GymLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLocationManager.swift; sourceTree = "<group>"; };
+		2692598D25E12F89009E553E /* GymLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLocationData.swift; sourceTree = "<group>"; };
 		B83C9F16E4FFA50DF9F56A8A /* Pods-onecoachfitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onecoachfitness.release.xcconfig"; path = "Target Support Files/Pods-onecoachfitness/Pods-onecoachfitness.release.xcconfig"; sourceTree = "<group>"; };
 		F4E1EA38A933391F115AB16C /* Pods-onecoachfitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onecoachfitness.debug.xcconfig"; path = "Target Support Files/Pods-onecoachfitness/Pods-onecoachfitness.debug.xcconfig"; sourceTree = "<group>"; };
 		FA5C94AF65F6E099F55CC204 /* Pods_onecoachfitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onecoachfitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,7 @@
 		2657FAD025E0750000637737 = {
 			isa = PBXGroup;
 			children = (
+				2692597E25E0BDEE009E553E /* New Group */,
 				2657FADB25E0750000637737 /* onecoachfitness */,
 				2657FADA25E0750000637737 /* Products */,
 				6C18EF263387EE762D6E8B8C /* Pods */,
@@ -75,8 +82,8 @@
 			children = (
 				2657FADC25E0750000637737 /* AppDelegate.swift */,
 				2657FADE25E0750000637737 /* SceneDelegate.swift */,
-				2657FAF225E0793F00637737 /* Models */,
-				2657FAF125E0793100637737 /* Views */,
+				2657FAF225E0793F00637737 /* Model */,
+				2657FAF125E0793100637737 /* View */,
 				2657FAE225E0750200637737 /* Assets.xcassets */,
 				2657FAE725E0750200637737 /* LaunchScreen.storyboard */,
 				2657FAEA25E0750200637737 /* Info.plist */,
@@ -93,7 +100,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2657FAF125E0793100637737 /* Views */ = {
+		2657FAF125E0793100637737 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2657FAE025E0750000637737 /* ContentView.swift */,
@@ -103,14 +110,24 @@
 				2657FAFA25E081D900637737 /* ProfileView.swift */,
 				2657FAFD25E0827200637737 /* SettingsView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2657FAF225E0793F00637737 /* Models */ = {
+		2657FAF225E0793F00637737 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2692598A25E12E11009E553E /* GymLocationManager.swift */,
+				2692598D25E12F89009E553E /* GymLocationData.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2692597E25E0BDEE009E553E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2692597F25E0BE21009E553E /* apikey.rtf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		6C18EF263387EE762D6E8B8C /* Pods */ = {
@@ -119,7 +136,6 @@
 				F4E1EA38A933391F115AB16C /* Pods-onecoachfitness.debug.xcconfig */,
 				B83C9F16E4FFA50DF9F56A8A /* Pods-onecoachfitness.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,6 +209,7 @@
 				2657FAE925E0750200637737 /* LaunchScreen.storyboard in Resources */,
 				2657FAE625E0750200637737 /* Preview Assets.xcassets in Resources */,
 				2657FAE325E0750200637737 /* Assets.xcassets in Resources */,
+				2692598025E0BE21009E553E /* apikey.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2692598E25E12F89009E553E /* GymLocationData.swift in Sources */,
 				2657FAFE25E0827200637737 /* SettingsView.swift in Sources */,
 				2657FADD25E0750000637737 /* AppDelegate.swift in Sources */,
 				2657FB0125E09CAC00637737 /* TabBarView.swift in Sources */,
 				2657FAF425E0797300637737 /* MapView.swift in Sources */,
 				2657FADF25E0750000637737 /* SceneDelegate.swift in Sources */,
 				2657FAE125E0750000637737 /* ContentView.swift in Sources */,
+				2692598B25E12E11009E553E /* GymLocationManager.swift in Sources */,
 				2657FAFB25E081D900637737 /* ProfileView.swift in Sources */,
 				2657FAF825E080AE00637737 /* ExerciseView.swift in Sources */,
 			);
