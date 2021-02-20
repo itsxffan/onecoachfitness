@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  onecoachfitness
 //
-//  Copyrights © 2021 - Saffan Ahmed. All rights reserved.
+//  Copyrights © 2021 - Saffan Ahmed. Full rights reserved.
 
 import UIKit
 import SwiftUI
