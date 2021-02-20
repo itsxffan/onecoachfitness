@@ -17,6 +17,7 @@ struct GymLocation: Decodable, Identifiable{
         return place_id
     }
     let place_id: String
+    let name: String?
     let lat: Int?
     let lng: Int?
     let vicinity: String?

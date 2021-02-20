@@ -26,7 +26,11 @@ struct ContentView: View {
                             MapView()
                                 .scaledToFit()
                             List(gymLocationManager.gymLocations) { location in
-                                Text(location.vicinity!)
+                                VStack {
+                                    Text(String(location.name!))
+                                    Spacer()
+                                    Text(location.vicinity!)
+                                }
                             }
                         }
                         .tag(1)
