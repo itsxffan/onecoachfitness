@@ -10,7 +10,7 @@ import UIKit
 
 struct ContentView: View {
     
-    @ObservedObject var gymLocationManager = GymLocationManager()
+    //@ObservedObject var gymLocationManager = GymLocationManager()
     @State var selectedIndex = 0
 //    let tabBarImageNames = ["map", "bolt.heart", "person", "gear"]
 //    let tabBarTitleNames = ["Gym", "Exercise", "Profile", "Settings"]
@@ -23,16 +23,10 @@ struct ContentView: View {
                         .tag(0)
                     Text("Gym Search")
                         VStack {
-                            Text("Hello")
+                            
                             MapView()
-                                //.scaledToFit()
-                            List(gymLocationManager.gymLocations) { location in
-                                VStack {
-                                    Text(String(location.name!))
-                                    Spacer()
-                                    //Text(location.vicinity!)
-                                }
-                            }
+                                .scaledToFit()
+                            GymListView()
                         }
                         .tag(1)
                     Text("Workout")
@@ -44,13 +38,8 @@ struct ContentView: View {
   
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            
             Divider()
-            
             TabBarView(selectedIndex: $selectedIndex)
-        }
-        .onAppear {
-            self.gymLocationManager.fetchData()
         }
     }
 }
@@ -87,5 +76,6 @@ struct ContentView: View {
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }

@@ -18,6 +18,7 @@
 		2657FAFB25E081D900637737 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFA25E081D900637737 /* ProfileView.swift */; };
 		2657FAFE25E0827200637737 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFD25E0827200637737 /* SettingsView.swift */; };
 		2657FB0125E09CAC00637737 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FB0025E09CAC00637737 /* TabBarView.swift */; };
+		267CB4DE25E1B5DF00F3239F /* GymListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CB4DD25E1B5DF00F3239F /* GymListView.swift */; };
 		2692598B25E12E11009E553E /* GymLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692598A25E12E11009E553E /* GymLocationManager.swift */; };
 		2692598E25E12F89009E553E /* GymLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692598D25E12F89009E553E /* GymLocationData.swift */; };
 		402F0D0EDAD5126B597BF782 /* Pods_onecoachfitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C94AF65F6E099F55CC204 /* Pods_onecoachfitness.framework */; };
@@ -37,6 +38,7 @@
 		2657FAFA25E081D900637737 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2657FAFD25E0827200637737 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2657FB0025E09CAC00637737 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		267CB4DD25E1B5DF00F3239F /* GymListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListView.swift; sourceTree = "<group>"; };
 		2692598A25E12E11009E553E /* GymLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLocationManager.swift; sourceTree = "<group>"; };
 		2692598D25E12F89009E553E /* GymLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLocationData.swift; sourceTree = "<group>"; };
 		B83C9F16E4FFA50DF9F56A8A /* Pods-onecoachfitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onecoachfitness.release.xcconfig"; path = "Target Support Files/Pods-onecoachfitness/Pods-onecoachfitness.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				2657FAF725E080AE00637737 /* ExerciseView.swift */,
 				2657FAFA25E081D900637737 /* ProfileView.swift */,
 				2657FAFD25E0827200637737 /* SettingsView.swift */,
+				267CB4DD25E1B5DF00F3239F /* GymListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267CB4DE25E1B5DF00F3239F /* GymListView.swift in Sources */,
 				2692598E25E12F89009E553E /* GymLocationData.swift in Sources */,
 				2657FAFE25E0827200637737 /* SettingsView.swift in Sources */,
 				2657FADD25E0750000637737 /* AppDelegate.swift in Sources */,
