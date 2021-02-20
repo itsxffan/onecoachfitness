@@ -20,6 +20,7 @@ struct ContentView: View {
                     Text("Home")
                         .tag(0)
                     Text("Gym Search")
+                        MapView()
                         .tag(1)
                     Text("Workout")
                         .tag(2)
@@ -27,65 +28,13 @@ struct ContentView: View {
                         .tag(3)
                     Text("Settings")
                         .tag(4)
-    //        VStack(spacing: 0){
-    //            ZStack {
-    //                switch selectedIndex {
-    //                case 0:
-    //                    NavigationView {
-    //                        MapView().scaledToFill()
-    //                            .navigationTitle("Gym Search")
-    //                    }
-    //
-    //                case 1:
-    //                    NavigationView {
-    //                        ExerciseView()
-    //                            .navigationTitle("Fitness Plan")
-    //                    }
-    //
-    //                case 2:
-    //                    NavigationView {
-    //                        ProfileView()
-    //                            .navigationTitle("Profile")
-    //                    }
-    //
-    //                case 3:
-    //                    NavigationView {
-    //                        SettingsView()
-    //                            .navigationTitle("Settings")
-    //                    }
-    //
-    //                default:
-    //                    Text("Remaining Tabs")
-    //                }
-    //            }
-    //            //Spacer()
-    //
-    //            Divider()
-    //                .padding(.bottom, 12)
-    //
-    //            HStack {
-    //                ForEach(0..<4) { num in
-    //                    Button(action: {
-    //                        selectedIndex = num
-    //                    }, label: {
-    //                        Spacer()
-    //                        Image(systemName: tabBarImageNames[num])
-    //                            .font(.system(size: 27, weight: .bold))
-    //                            .foregroundColor(selectedIndex == num ? Color(.red):
-    //                                                .init(white: 0.8))
-    //                        //Text(tabBarTitleNames[num])
-    //                        Spacer()
-    //                    })
-    //
-    //                }
-    //            }
-    //
-    //        }
+  
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             Divider()
-            // Tab Bar Coming Soon?
+            
+            TabBarView(selectedIndex: $selectedIndex)
         }
     }
 }
