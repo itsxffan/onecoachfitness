@@ -17,6 +17,7 @@
 		2657FAF825E080AE00637737 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAF725E080AE00637737 /* ExerciseView.swift */; };
 		2657FAFB25E081D900637737 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFA25E081D900637737 /* ProfileView.swift */; };
 		2657FAFE25E0827200637737 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FAFD25E0827200637737 /* SettingsView.swift */; };
+		2657FB0125E09CAC00637737 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657FB0025E09CAC00637737 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2657FAF725E080AE00637737 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		2657FAFA25E081D900637737 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2657FAFD25E0827200637737 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2657FB0025E09CAC00637737 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2657FAE025E0750000637737 /* ContentView.swift */,
+				2657FB0025E09CAC00637737 /* TabBarView.swift */,
 				2657FAF325E0797300637737 /* MapView.swift */,
 				2657FAF725E080AE00637737 /* ExerciseView.swift */,
 				2657FAFA25E081D900637737 /* ProfileView.swift */,
@@ -175,6 +178,7 @@
 			files = (
 				2657FAFE25E0827200637737 /* SettingsView.swift in Sources */,
 				2657FADD25E0750000637737 /* AppDelegate.swift in Sources */,
+				2657FB0125E09CAC00637737 /* TabBarView.swift in Sources */,
 				2657FAF425E0797300637737 /* MapView.swift in Sources */,
 				2657FADF25E0750000637737 /* SceneDelegate.swift in Sources */,
 				2657FAE125E0750000637737 /* ContentView.swift in Sources */,
